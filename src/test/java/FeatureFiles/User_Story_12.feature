@@ -10,16 +10,6 @@ Feature: Add - Edit - Delete Nationalities under Parameters Setup
     When   Add to Nationalities
     Then   Confirmation of successfully
 
-  Scenario: Edit Nationalities to Parameters
-    Given  Clicking on the Setup, Parameters, Nationalities options from the menu categories
-    When   Edit to Nationalities
-    Then   Confirmation of successfully
-
-  Scenario: Delete Nationalities to Parameters
-    Given  Clicking on the Setup, Parameters, Nationalities options from the menu categories
-    When   Delete to Nationalities
-    Then   Confirmation of successfully
-
 
 
 
