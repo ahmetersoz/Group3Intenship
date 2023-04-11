@@ -3,7 +3,7 @@ Feature: Add - Edit - Delete Degree Levels Under Parameter Settings
   Background:
     Given Go to Given Site
     When Enter the username and password and click the login button
-    Then User should login succesfully
+    Then User should login successfully
 
   Scenario: Adding Degree Levels to Parameters
    Given by clicking Settings, Parameters, Degree Levels in the menu categories.
