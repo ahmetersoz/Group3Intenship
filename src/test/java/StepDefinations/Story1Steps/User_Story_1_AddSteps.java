@@ -1,7 +1,6 @@
 package StepDefinations.Story1Steps;
 
 import Pages.DialogContent;
-import Pages.FormContent;
 import Pages.LeftNav;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -9,7 +8,7 @@ import io.cucumber.java.en.When;
 public class User_Story_1_AddSteps {
     LeftNav ln=new LeftNav();
     DialogContent dc=new DialogContent();
-    FormContent form=new FormContent();
+
     @Given("Clicking selected options in the campus menu")
     public void clickingSelectedOptionsInTheCampusMenu() {
         ln.findAndClick("HumanResources");
@@ -21,7 +20,7 @@ public class User_Story_1_AddSteps {
     @When("Add to position category")
     public void addToPositionCategory() {
         dc.findAndClick("createButton");
-        form.findAndSend("nameInput","Emos23233");
+        dc.findAndSend2("nameInput","Emos23233000");
         dc.findAndClick("saveButton");
 
     }

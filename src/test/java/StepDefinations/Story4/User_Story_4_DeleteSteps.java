@@ -9,7 +9,7 @@ public class User_Story_4_DeleteSteps {
     Parent parent=new Parent();
     @When("Delete to Fields")
     public void deleteToFields() {
-        dc.findAndSend("nameinput","Emine123555");
+        dc.findAndSend("nameinput","19840914449449");
         dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("deletebutton");

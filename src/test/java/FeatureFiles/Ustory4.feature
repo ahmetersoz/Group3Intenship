@@ -19,4 +19,3 @@ Feature: Add - Edit - Delete Fields under Parameters Setup
     Given  Clicking on the Setup, Parameters, Fields options from the menu categories
     When   Delete to Fields
     Then   Confirmation of successfully
-    # merhaba
