@@ -1,4 +1,4 @@
-package StepDefinations_6_Steps;
+package StepDefinations.StepDefinations_6_Steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;

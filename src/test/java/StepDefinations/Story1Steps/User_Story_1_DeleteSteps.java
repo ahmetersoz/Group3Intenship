@@ -11,11 +11,11 @@ public class User_Story_1_DeleteSteps {
     Parent parent=new Parent();
     @When("Delete to position category")
     public void deleteToPositionCategory() {
-        dc.findAndSend("nameinput","Emos23233");
-        dc.findAndClick("searchbutton");
+        dc.findAndSend("NAMEINPUT","tunam1");
+        dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
-        dc.findAndClick("deletebutton");
-        dc.findAndClick("deletebutton2");
+        dc.findAndClick("DELETEBUTTON");
+        dc.findAndClick("DELETEBUTTON2");
 
     }
 }

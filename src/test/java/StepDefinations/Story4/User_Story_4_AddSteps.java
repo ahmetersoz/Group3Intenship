@@ -20,11 +20,12 @@ public class User_Story_4_AddSteps {
     @When("Add to Fields")
     public void addToFields() {
         dc.findAndClick("createButton");
-        fm.findAndSend("nameInput","Emine123555");
-        fm.findAndSend("code","1984091444");
+        fm.findAndSend("nameInput","Eminos");
+        fm.findAndSend("code","1984");
         fm.findAndClick("textSelect");
         fm.findAndClick("logical");
         dc.findAndClick("saveButton");
 
     }
 }
+

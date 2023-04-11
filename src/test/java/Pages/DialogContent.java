@@ -35,27 +35,34 @@ public class DialogContent extends Parent {
     private WebElement succesfully;
 
     @FindBy(xpath = "(//ms-text-field[contains(@placeholder,'NAME')])[1]//input")
-    private WebElement nameinput;
+    private WebElement NAMEINPUT;
 
     @FindBy(xpath = "//span[contains(text(),'Search')]")
-    private WebElement searchbutton;
+    private WebElement SEARCHBUTTON;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[12]//fa-icon")
-    private WebElement editbutton;
+    private WebElement EDİTBUTTON;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[33]//fa-icon")
-    private WebElement deletebuttonrow9;
+    private WebElement DELETEBUTTONROW9;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[13]//fa-icon")
-    private WebElement deletebutton;
+    private WebElement DELETEBUTTON;
 
     @FindBy(xpath = "//span[contains(text(),' Delete ')]")
-    private WebElement deletebutton2;
+    private WebElement DELETEBUTTON2;
 
     @FindBy(xpath = "//span[text()='Campus Project']")
     private WebElement schoolButton;
 
+    @FindBy(xpath = "//span[text()=' Halo Imperial College  ']")
+    private WebElement haloImperial;
 
+    @FindBy(xpath = "(//button[@color='accent'])[9]//fa-icon")
+    private WebElement gradeEditButton;
+
+    @FindBy(xpath = "//ms-text-field[@placeholder='DISCOUNT.TITLE.DESCRIPTION']//input")
+    private WebElement descriptionInput;
 
     @FindBy(xpath = "//div[text()=' Name ']")
     private WebElement nameVerify;
@@ -68,8 +75,8 @@ public class DialogContent extends Parent {
         switch (strElement) {
             case "username":myElement=username;break;
             case "password":myElement=password;break;
-            case "nameinput":myElement=nameinput;break;
-
+            case "NAMEINPUT":myElement=NAMEINPUT;break;
+            case "descriptionInput":myElement=descriptionInput;break;
 
 
 
@@ -85,13 +92,14 @@ public class DialogContent extends Parent {
             case "acceptCookies":myElement=AcceptCookies;break;
             case "createButton":myElement=createButton;break;
             case "saveButton":myElement=saveButton;break;
-            case "searchbutton":myElement=searchbutton;break;
-            case "editbutton":myElement=editbutton;break;
-            case "deletebutton":myElement=deletebutton;break;
-            case "deletebutton2":myElement=deletebutton2;break;
+            case "SEARCHBUTTON":myElement=SEARCHBUTTON;break;
+            case "EDİTBUTTON":myElement=EDİTBUTTON;break;
+            case "DELETEBUTTON":myElement=DELETEBUTTON;break;
+            case "DELETEBUTTON2":myElement=DELETEBUTTON2;break;
             case "schoolButton":myElement=schoolButton;break;
-
-            case "deletebuttonrow9":myElement=deletebuttonrow9;break;
+            case "haloImperial":myElement=haloImperial;break;
+            case "gradeEditButton":myElement=gradeEditButton;break;
+            case "DELETEBUTTONROW9":myElement=DELETEBUTTONROW9;break;
 
             
 
