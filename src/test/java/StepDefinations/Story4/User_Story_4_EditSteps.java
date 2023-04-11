@@ -2,9 +2,7 @@ package StepDefinations.Story4;
 
 import Pages.DialogContent;
 import Pages.FormContent;
-import Pages.LeftNav;
 import Pages.Parent;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class User_Story_4_EditSteps {
@@ -14,12 +12,12 @@ public class User_Story_4_EditSteps {
 
     @When("Edit to Fields")
     public void editToFields() {
-        dc.findAndSend("NAMEINPUT", "Eminos");
+        dc.findAndSend("NAMEINPUT", "Ramazan");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput", "Yüksel");
-        fm.findAndSend("code", "1972");
+        fm.findAndSend("nameInput", "Salih");
+        fm.findAndSend("code", "1987");
         dc.findAndClick("saveButton");
     }
 }

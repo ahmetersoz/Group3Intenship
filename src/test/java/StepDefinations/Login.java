@@ -23,8 +23,10 @@ public class Login {
 
     }
 
-    @Then("User should login succesfully")
-    public void userShouldLoginSuccesfully() {
-        dc.verifyText("Dashboard","Dashboard");
+
+
+    @Then("User should login successfully")
+    public void userShouldLoginSuccessfully() {dc.verifyText("Dashboard","Dashboard");
     }
-}
+    }
+
