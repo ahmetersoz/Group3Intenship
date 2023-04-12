@@ -1,4 +1,4 @@
-package Story1;
+package StepDefinations.Story1;
 
 import Pages.DialogContent;
 import Pages.FormContent;
