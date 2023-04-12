@@ -20,7 +20,7 @@ public class case6addsteps {
     @When("Add to Subject Categories")
     public void addToSubjectCategories() {
         dc.findAndClick("createButton");
-        fm.findAndSend("nameInput","emos");
+        fm.findAndSend("nameInput","enes7");
         fm.findAndSend("code","12000");
         dc.findAndClick("saveButton");
 
