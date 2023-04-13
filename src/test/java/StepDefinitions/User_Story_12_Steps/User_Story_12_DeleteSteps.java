@@ -1,4 +1,4 @@
-package StepDefinitions.User_Story_12_Steps;
+package StepDefinations.User_Story_12_Steps;
 
 import Pages.DialogContent;
 import Pages.Parent;
@@ -11,7 +11,7 @@ public class User_Story_12_DeleteSteps {
     @When("Delete to Nationalities")
     public void deleteToNationalities() {
         dc.verifyText("nameVerify","Name");
-        dc.findAndSend("NAMEINPUT","NORTH KOREA");
+        dc.findAndSend("NAMEINPUT","GUATEMALA");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");

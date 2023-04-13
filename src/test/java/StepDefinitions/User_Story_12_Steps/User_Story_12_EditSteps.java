@@ -1,4 +1,4 @@
-package StepDefinitions.User_Story_12_Steps;
+package StepDefinations.User_Story_12_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -13,11 +13,11 @@ public class User_Story_12_EditSteps {
     @When("Edit to Nationalities")
     public void editToNationalities() {
         dc.verifyText("nameVerify","Name");
-        dc.findAndSend("NAMEINPUT","SOUTH KOREA ");
+        dc.findAndSend("NAMEINPUT","NİKARAGUA");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput","NORTH KOREA");
+        fm.findAndSend("nameInput","GUATEMALA");
         dc.findAndClick("saveButton");
 
     }

@@ -1,4 +1,4 @@
-package StepDefinitions.Story1;
+package StepDefinations.Story1;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -12,11 +12,11 @@ public class User_Story_1_EditSteps {
     @When("Edit to position category")
     public void editToPositionCategory() {
 
-        dc.findAndSend("NAMEINPUT","Halil");
+        dc.findAndSend("NAMEINPUT","Ahmet22");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput","Tunaşko");
+        fm.findAndSend("nameInput","Tunaş");
         dc.findAndClick("saveButton");
 
     }

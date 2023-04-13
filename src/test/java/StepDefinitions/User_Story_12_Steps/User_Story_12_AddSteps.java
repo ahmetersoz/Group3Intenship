@@ -1,4 +1,4 @@
-package StepDefinitions.User_Story_12_Steps;
+package StepDefinations.User_Story_12_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -22,7 +22,7 @@ public class User_Story_12_AddSteps {
     public void addToNationalities() {
         dc.verifyText("nameVerify","Name");
         dc.findAndClick("createButton");
-        fm.findAndSend("nameInput","SOUTH KOREA");
+        fm.findAndSend("nameInput","NİKARAGUA");
         dc.findAndClick("saveButton");
 
     }
