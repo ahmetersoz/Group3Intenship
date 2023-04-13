@@ -106,7 +106,7 @@ public class FormContent extends Parent {
     private WebElement nextGrade;
 
     @FindBy(xpath = "//span[text()=' Gullu Julian Bednar ']")
-    private WebElement ordselect;
+    private WebElement gulluselect;
 
     @FindBy(xpath = "//span[text()=' capacitor ']")
     private WebElement leonard;
@@ -119,6 +119,8 @@ public class FormContent extends Parent {
 
     @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
     private WebElement priority;
+
+
 
 
 
@@ -172,7 +174,7 @@ public class FormContent extends Parent {
             case "EURO":myElement=EURO;break;
             case "TRY":myElement=TRY;break;
             case "nextGrade":myElement=nextGrade;break;
-            case "gulluselect":myElement=ordselect;break;
+            case "gulluselect":myElement=gulluselect;break;
             case "leonard":myElement=leonard;break;
 
 
