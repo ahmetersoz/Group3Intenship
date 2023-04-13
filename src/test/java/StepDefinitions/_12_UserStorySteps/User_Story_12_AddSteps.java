@@ -1,4 +1,4 @@
-package StepDefinations.User_Story_12_Steps;
+package StepDefinitions._12_UserStorySteps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
