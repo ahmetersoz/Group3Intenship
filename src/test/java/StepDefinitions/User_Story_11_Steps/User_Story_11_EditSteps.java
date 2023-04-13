@@ -16,13 +16,13 @@ public class User_Story_11_EditSteps {
     @When("Edit to Discounts")
     public void editToDiscounts() throws AWTException {
         parent.waitEditButtonVerify();
-        dc.findAndSend("descriptionInput","Joaquin");
+        dc.findAndSend("descriptionInput","Yıldız");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("getDescription","Toni");
-        fm.findAndSend("getIntegrationCode","LATO");
-        fm.findAndSend("priority","20");
+        fm.findAndSend("getDescription","Ahmet");
+        fm.findAndSend("getIntegrationCode","Ers");
+        fm.findAndSend("priority","83");
         Robot rbt = new Robot();
         rbt.keyPress(KeyEvent.VK_TAB);
         rbt.keyRelease(KeyEvent.VK_TAB);

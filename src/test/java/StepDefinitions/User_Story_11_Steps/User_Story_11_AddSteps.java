@@ -26,9 +26,9 @@ public class User_Story_11_AddSteps {
     public void addToDiscounts() throws AWTException {
         parent.waitEditButtonVerify();
         dc.findAndClick("createButton");
-        fm.findAndSend("getDescription","Emmos");
-        fm.findAndSend("getIntegrationCode","Ersz");
-        fm.findAndSend("priority","15");
+        fm.findAndSend("getDescription","Yıldız");
+        fm.findAndSend("getIntegrationCode","Tunna");
+        fm.findAndSend("priority","150");
         Robot rbt = new Robot();
         rbt.keyPress(KeyEvent.VK_TAB);
         rbt.keyRelease(KeyEvent.VK_TAB);

@@ -1,4 +1,4 @@
-package StepDefinitions.StepDefinitions_6_Steps;
+package StepDefinitions.User_Story_6_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -20,8 +20,8 @@ public class User_Story_6_AddSteps {
     @When("Add to Subject Categories")
     public void addToSubjectCategories() {
         dc.findAndClick("createButton");
-        fm.findAndSend("nameInput","emos");
-        fm.findAndSend("code","12000");
+        fm.findAndSend("nameInput","Tuniskom");
+        fm.findAndSend("code","0099880");
         dc.findAndClick("saveButton");
 
     }

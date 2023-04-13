@@ -11,87 +11,87 @@ public class LeftNav extends Parent {
     }
 
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
-    private WebElement SetupOne;
+    public WebElement SetupOne;
 
     @FindBy(xpath = "(//span[text()='Countries'])[1]")
-    private WebElement Countries;
+    public WebElement Countries;
 
     @FindBy(xpath = "//span[text()='Parameters']")
-    private WebElement Parameters;
+    public WebElement Parameters;
 
     @FindBy(xpath = "//span[text()='Citizenships']")
-    private WebElement Citizenships;
+    public WebElement Citizenships;
 
     @FindBy(xpath = "//span[text()='Nationalities']")
-    private WebElement nationalities;
+    public WebElement nationalities;
 
     @FindBy(xpath = "//span[text()='Fees']")
-    private WebElement Fees;
+    public WebElement Fees;
 
     @FindBy(xpath = "(//span[text()='Entrance Exams'])[1]")
-    private WebElement EntranceExams1;
+    public WebElement EntranceExams1;
 
     @FindBy(xpath = "(//span[text()='Entrance Exams'])[2]")
-    private WebElement EntranceExams2;
+    public WebElement EntranceExams2;
 
     @FindBy(xpath = "(//span[text()='Setup'])[2]")
-    private WebElement SetupTwo;
+    public WebElement SetupTwo;
 //-------------------------------------------------------------//
     @FindBy(xpath = "//span[text()='Human Resources']")
-    private WebElement HumanResources;
+    public WebElement HumanResources;
 
     @FindBy(xpath = "(//span[text()='Setup'])[3]")
-    private WebElement setupClick;
+    public WebElement setupClick;
 
 
 //-----------------------------------------------------------//
     @FindBy(xpath = "//span[text()='Employees']")
-    private WebElement Employees;
+    public WebElement Employees;
 
     @FindBy(xpath = "//span[text()='School Setup']")
-    private WebElement SchoolSetup;
+    public WebElement SchoolSetup;
 
     @FindBy(xpath = "//span[text()='Departments']")
-    private WebElement SchoolDepartments;
+    public WebElement SchoolDepartments;
 
     @FindBy(xpath = "(//span[text()='Position Categories'])[1]")
-    private WebElement positionCategories;
+    public WebElement positionCategories;
 
     @FindBy(xpath = "(//span[text()='Attestations'])[1]")
-    private WebElement attestations;
+    public WebElement attestations;
 
     @FindBy(xpath = "(//span[text()='Document Types'])[1]")
-    private WebElement documentTypes;
+    public WebElement documentTypes;
 
     @FindBy(xpath = "//span[text()='Fields']")
-    private WebElement fields;
+    public WebElement fields;
 
     @FindBy(xpath = "(//span[text()='Positions'])[1]")
-    private WebElement positions;
+    public WebElement positions;
 
     @FindBy(xpath = "//span[text()='Education']")
-    private WebElement education;
+    public WebElement education;
 
     @FindBy(xpath = "(//span[text()='Setup'])[5]")
-    private WebElement setup4;
+    public WebElement setup4;
 
     @FindBy(xpath = "(//span[text()='Subject Categories'])[1]")
     private WebElement subjectCategories;
 
     @FindBy(xpath = "//span[text()='Locations']")
-    private WebElement schoolLocations;
+    public WebElement schoolLocations;
 
     @FindBy(xpath = "//span[text()='Departments']")
-    private WebElement departments;
+    public WebElement departments;
 
     @FindBy(xpath = "(//span[text()='Bank Accounts'])[1]")
-    private WebElement bankAccounts;
+    public WebElement bankAccounts;
 
     @FindBy(xpath = "(//span[text()='Grade Levels'])[1]")
-    private WebElement gradeLevels;
+    public WebElement gradeLevels;
 
     @FindBy(xpath = "(//span[text()='Discounts'])[1]")
-    private WebElement discounts;
+    public WebElement discounts;
 
 
 

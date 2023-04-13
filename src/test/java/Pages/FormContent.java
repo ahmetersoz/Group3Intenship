@@ -13,112 +13,114 @@ public class FormContent extends Parent {
     }
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='name']//input")
-    private WebElement nameInput;
+    public WebElement nameInput;
 
     @FindBy(css = "[data-placeholder='Name']")
-    private WebElement name2;
+    public WebElement name2;
 
     @FindBy(xpath = "(//span[text()='Stage'])[3]")
-    private WebElement stage;
+    public WebElement stage;
 
     @FindBy(xpath = "//span[text()=' Student Registration ']")
-    private WebElement getStage1;
+    public WebElement getStage1;
 
     @FindBy(xpath = "//span[text()=' Examination ']")
-    private WebElement getStage2;
+    public WebElement getStage2;
 
     @FindBy(xpath = "//span[text()=' Employment ']")
-    private WebElement getStage3;
+    public WebElement getStage3;
 
     @FindBy(xpath = "//textarea[@formcontrolname='description']")
-    private WebElement description;
+    public WebElement description;
 
     @FindBy(xpath = "(//span[@class='mat-slide-toggle-thumb-container'])[33]/span[1]")
-    private WebElement useCamera;
+    public WebElement useCamera;
 
     @FindBy(xpath = "(//ms-text-field[@placeholder='GENERAL.FIELD.CODE'])[2]//input")
-    private WebElement code1;
+    public WebElement code1;
 
     @FindBy(xpath = "(//mat-select[@role='combobox'])[2]//div[2]")
-    private WebElement textSelect;
+    public WebElement textSelect;
 
     @FindBy(xpath = "//span[text()=' Logical ']")
-    private WebElement logical;
+    public WebElement logical;
 
     @FindBy(xpath = "(//ms-text-field[@placeholder='GENERAL.FIELD.SHORTNAME'])[2]//input")
-    private WebElement shortname;
+    public WebElement shortname;
 
     @FindBy(xpath = "//input[@data-placeholder='Short Name']")
-    private WebElement shortname2;
+    public WebElement shortname2;
 
     @FindBy(xpath = "(//mat-select[@role='combobox'])[3]//div[2]")
-    private WebElement locationType;
+    public WebElement locationType;
 
     @FindBy(xpath = "//span[text()=' Other ']")
-    private WebElement other;
+    public WebElement other;
 
     @FindBy(xpath = "//ms-integer-field[@formcontrolname='capacity']//input")
-    private WebElement capacity;
+    public WebElement capacity;
 
     @FindBy(xpath = "//span[text()='Department Constants']")
-    private WebElement departmentConstants;
+    public WebElement departmentConstants;
 
     @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.KEY']//input")
-    private WebElement key;
+    public WebElement key;
 
     @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.VALUE']//input")
-    private WebElement values;
+    public WebElement values;
 
     @FindBy(xpath = "//span[contains(text(),'Add')]")
-    private WebElement addButton;
+    public WebElement addButton;
 
     @FindBy(xpath = "//span[text()='Section']")
-    private WebElement section;
+    public WebElement section;
 
     @FindBy(xpath = "(//span[contains(text(),'School Department')])[4]")
-    private WebElement schoolDepartment;
+    public WebElement schoolDepartment;
 
     @FindBy(xpath = "(//ms-text-field[@placeholder='GENERAL.FIELD.CODE'])[1]//input")
-    private WebElement codeInput;
+    public WebElement codeInput;
 
     @FindBy(xpath = "//span[text()='Active']")
-    private WebElement activeButton;
+    public WebElement activeButton;
 
     @FindBy(xpath = "//ms-masked-text-field[@formcontrolname='iban']//input")
-    private WebElement iban;
+    public WebElement iban;
 
     @FindBy(xpath = "//mat-select[@formcontrolname='currency']/div")
-    private WebElement currency;
+    public WebElement currency;
 
     @FindBy(xpath = "//span[text()=' EUR ']")
-    private WebElement EURO;
+    public WebElement EURO;
 
     @FindBy(xpath = "//span[text()=' TRY ']")
-    private WebElement TRY;
+    public WebElement TRY;
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
-    private WebElement ıntegrationCode;
+    public WebElement ıntegrationCode;
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='order']//input")
-    private WebElement order;
+    public WebElement order;
 
     @FindBy(xpath = "(//mat-select[@role='combobox'])[2]/div[1]")
-    private WebElement nextGrade;
+    public WebElement nextGrade;
 
     @FindBy(xpath = "//span[text()=' Gullu Julian Bednar ']")
-    private WebElement gulluselect;
+    public WebElement gulluselect;
 
     @FindBy(xpath = "//span[text()=' capacitor ']")
-    private WebElement leonard;
+    public WebElement leonard;
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='description']//input")
-    private WebElement getDescription;
+    public WebElement getDescription;
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='code']//input")
-    private WebElement getIntegrationCode;
+    public WebElement getIntegrationCode;
 
     @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
-    private WebElement priority;
+    public WebElement priority;
+
+
 
 
 
