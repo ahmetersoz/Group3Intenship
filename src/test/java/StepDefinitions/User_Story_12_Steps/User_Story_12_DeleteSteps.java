@@ -11,8 +11,8 @@ public class User_Story_12_DeleteSteps {
     @When("Delete to Nationalities")
     public void deleteToNationalities() {
         dc.verifyText("nameVerify","Name");
-        dc.findAndSend("NAMEINPUT","GUATEMALA");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndSend("NAMEINPUT","brazil");
+        dc.findAndClick("searcbutton");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");
         dc.findAndClick("DELETEBUTTON2");

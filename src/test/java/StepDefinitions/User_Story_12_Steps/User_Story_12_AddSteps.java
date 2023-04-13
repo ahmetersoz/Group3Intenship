@@ -22,7 +22,7 @@ public class User_Story_12_AddSteps {
     public void addToNationalities() {
         dc.verifyText("nameVerify","Name");
         dc.findAndClick("createButton");
-        fm.findAndSend("nameInput","NİKARAGUA");
+        fm.findAndSend("nameInput","Belize");
         dc.findAndClick("saveButton");
 
     }

@@ -10,7 +10,7 @@ public class User_Story_6_DeleteSteps {
     @When("Delete to Subject Categories")
     public void deleteToSubjectCategories() {
         dc.findAndSend("NAMEINPUT","Test1");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");
         dc.findAndClick("DELETEBUTTON2");

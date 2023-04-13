@@ -11,8 +11,8 @@ public class User_Story_11_DeleteSteps {
     @When("Delete to Discounts")
     public void deleteToDiscounts() {
         parent.waitEditButtonVerify();
-        dc.findAndSend("descriptionInput","Ahmet");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndSend("descriptionInput","Tuna");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");
         dc.findAndClick("DELETEBUTTON2");

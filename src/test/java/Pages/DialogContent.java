@@ -38,7 +38,7 @@ public class DialogContent extends Parent {
     public WebElement NAMEINPUT;
 
     @FindBy(xpath = "//span[contains(text(),'Search')]")
-    public WebElement SEARCHBUTTON;
+    public WebElement searchbutton;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[12]//fa-icon")
     public WebElement EDİTBUTTON;
@@ -92,7 +92,7 @@ public class DialogContent extends Parent {
             case "acceptCookies":myElement=AcceptCookies;break;
             case "createButton":myElement=createButton;break;
             case "saveButton":myElement=saveButton;break;
-            case "SEARCHBUTTON":myElement=SEARCHBUTTON;break;
+            case "SEARCHBUTTON":myElement=searchbutton;break;
             case "EDİTBUTTON":myElement=EDİTBUTTON;break;
             case "DELETEBUTTON":myElement=DELETEBUTTON;break;
             case "DELETEBUTTON2":myElement=DELETEBUTTON2;break;

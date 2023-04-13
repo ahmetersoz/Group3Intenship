@@ -13,11 +13,11 @@ public class User_Story_12_EditSteps {
     @When("Edit to Nationalities")
     public void editToNationalities() {
         dc.verifyText("nameVerify","Name");
-        dc.findAndSend("NAMEINPUT","NİKARAGUA");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndSend("NAMEINPUT","California");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput","GUATEMALA");
+        fm.findAndSend("nameInput","Kocaeli");
         dc.findAndClick("saveButton");
 
     }

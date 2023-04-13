@@ -11,11 +11,11 @@ public class User_Story_6_EditSteps {
     Parent parent=new Parent();
     @When("Edit to Subject Categories")
     public void editToSubjectCategories() {
-        dc.findAndSend("NAMEINPUT","PHYTON");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndSend("NAMEINPUT","sude");
+        dc.findAndClick("searchbutton");
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput","RUBY");
-        fm.findAndSend("code","12500");
+        fm.findAndSend("nameInput","enesff");
+        fm.findAndSend("code","009988");
         dc.findAndClick("saveButton");
 
 

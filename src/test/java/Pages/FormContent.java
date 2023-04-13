@@ -126,6 +126,8 @@ public class FormContent extends Parent {
 
 
 
+    @FindBy(xpath = "((//span[@class='mat-ripple mat-button-ripple'])[3]")
+    public WebElement savebutton2;
 
 
 
@@ -151,6 +153,7 @@ public class FormContent extends Parent {
             case "getDescription":myElement=getDescription;break;
             case "getIntegrationCode":myElement=getIntegrationCode;break;
             case "priority":myElement=priority;break;
+            case "savebutton2":myElement=savebutton2;break;
 
 
 

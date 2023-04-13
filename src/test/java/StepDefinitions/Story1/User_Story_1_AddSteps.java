@@ -21,7 +21,7 @@ public class User_Story_1_AddSteps {
     @When("Add to position category")
     public void addToPositionCategory() {
         dc.findAndClick("createButton");
-        form.findAndSend("nameInput","Ahmet2289");
+        form.findAndSend("nameInput","ahmet8181");
         dc.findAndClick("saveButton");
 
     }

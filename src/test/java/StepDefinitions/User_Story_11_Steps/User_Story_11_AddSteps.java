@@ -26,8 +26,8 @@ public class User_Story_11_AddSteps {
     public void addToDiscounts() throws AWTException {
         parent.waitEditButtonVerify();
         dc.findAndClick("createButton");
-        fm.findAndSend("getDescription","Yıldız");
-        fm.findAndSend("getIntegrationCode","Tunna");
+        fm.findAndSend("getDescription","Yıldızz");
+        fm.findAndSend("getIntegrationCode","Tunnam");
         fm.findAndSend("priority","150");
         Robot rbt = new Robot();
         rbt.keyPress(KeyEvent.VK_TAB);
@@ -35,5 +35,5 @@ public class User_Story_11_AddSteps {
 
         dc.findAndClick("saveButton");
 
-    }
-}
+
+    }  }

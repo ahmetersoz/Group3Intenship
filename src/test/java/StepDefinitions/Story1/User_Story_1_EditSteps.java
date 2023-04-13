@@ -13,7 +13,7 @@ public class User_Story_1_EditSteps {
     public void editToPositionCategory() {
 
         dc.findAndSend("NAMEINPUT","Ahmet22");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
         fm.findAndSend("nameInput","Tunaş");

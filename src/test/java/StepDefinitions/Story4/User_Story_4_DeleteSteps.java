@@ -10,7 +10,7 @@ public class User_Story_4_DeleteSteps {
     @When("Delete to Fields")
     public void deleteToFields() {
         dc.findAndSend("NAMEINPUT","Ramazan");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");
         dc.findAndClick("DELETEBUTTON2");

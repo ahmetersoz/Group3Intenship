@@ -13,7 +13,7 @@ public class User_Story_4_EditSteps {
     @When("Edit to Fields")
     public void editToFields() {
         dc.findAndSend("NAMEINPUT", "Ramazan");
-        dc.findAndClick("SEARCHBUTTON");
+        dc.findAndClick("searchbutton");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
         fm.findAndSend("nameInput", "Salih");
