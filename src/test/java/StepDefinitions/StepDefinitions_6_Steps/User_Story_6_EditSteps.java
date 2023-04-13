@@ -1,23 +1,23 @@
-package StepDefinations.Story4;
+package StepDefinitions.StepDefinitions_6_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
 import Pages.Parent;
 import io.cucumber.java.en.When;
 
-public class User_Story_4_EditSteps {
+public class User_Story_6_EditSteps {
     DialogContent dc = new DialogContent();
     FormContent fm = new FormContent();
     Parent parent = new Parent();
 
-    @When("Edit to Fields")
-    public void editToFields() {
-        dc.findAndSend("NAMEINPUT", "Ramazan");
+    @When("Edit to Subject Categories")
+    public void editToSubjectCategories() {
+        dc.findAndSend("NAMEINPUT", "enes7");
         dc.findAndClick("SEARCHBUTTON");
-        parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput", "Salih");
-        fm.findAndSend("code", "1987");
+        fm.findAndSend("nameInput", "sude");
+        fm.findAndSend("code", "2288");
         dc.findAndClick("saveButton");
+
     }
 }

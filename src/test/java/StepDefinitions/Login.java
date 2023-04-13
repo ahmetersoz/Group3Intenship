@@ -1,4 +1,4 @@
-package StepDefinations;
+package StepDefinitions;
 
 import Pages.DialogContent;
 import Utilities.GWD;

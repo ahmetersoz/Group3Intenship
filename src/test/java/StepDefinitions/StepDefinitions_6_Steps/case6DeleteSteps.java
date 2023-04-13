@@ -1,4 +1,4 @@
-package StepDefinations.StepDefinations_6_Steps;
+package StepDefinitions.StepDefinitions_6_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;

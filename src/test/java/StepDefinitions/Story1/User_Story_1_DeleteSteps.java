@@ -1,4 +1,4 @@
-package StepDefinations.Story1;
+package StepDefinitions.Story1;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -11,7 +11,7 @@ public class User_Story_1_DeleteSteps {
     Parent parent=new Parent();
     @When("Delete to position category")
     public void deleteToPositionCategory() {
-        dc.findAndSend("NAMEINPUT","th2");
+        dc.findAndSend("NAMEINPUT","Ahmet229");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");

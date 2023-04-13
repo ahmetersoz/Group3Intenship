@@ -1,17 +1,15 @@
-package StepDefinations.User_Story_11_Steps;
+package StepDefinitions.Story4;
 
 import Pages.DialogContent;
 import Pages.Parent;
 import io.cucumber.java.en.When;
 
-public class User_Story_11_DeleteSteps {
+public class User_Story_4_DeleteSteps {
     DialogContent dc=new DialogContent();
     Parent parent=new Parent();
-
-    @When("Delete to Discounts")
-    public void deleteToDiscounts() {
-        parent.waitEditButtonVerify();
-        dc.findAndSend("descriptionInput","Toni");
+    @When("Delete to Fields")
+    public void deleteToFields() {
+        dc.findAndSend("NAMEINPUT","Ramazan");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("DELETEBUTTON");
