@@ -1,4 +1,4 @@
-package StepDefinations.StepDefinations_10_Steps;
+package StepDefinitions.StepDefinitions_10_Steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

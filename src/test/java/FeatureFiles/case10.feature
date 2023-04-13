@@ -1,8 +1,8 @@
 Feature: Add - Edit - Delete Degree Levels Under Parameter Settings
 
   Background:
-  Given Go to Given Site
-    When Enter the username and password and click the login button
+    Given Navigate to Campus
+    When Enter username and password and click login button
     Then User should login successfully
 
   Scenario: Add Degree Levels to Parameters

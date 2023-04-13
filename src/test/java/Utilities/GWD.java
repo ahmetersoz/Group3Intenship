@@ -16,7 +16,7 @@ public class GWD {
 
 
     private static ThreadLocal<WebDriver> threadDriver=new ThreadLocal<>();
-    private static ThreadLocal<String> threadBrowserName=new ThreadLocal<>();
+    public static ThreadLocal<String> threadBrowserName=new ThreadLocal<>();
 
     public static WebDriver getDriver()
     {
@@ -69,8 +69,10 @@ public class GWD {
         }
 
         if (threadDriver.get() != null) {
+            threadDriver.get().quit();
             WebDriver driver = threadDriver.get(); driver=null;
             threadDriver.set(driver);
+
         }
     }
 
