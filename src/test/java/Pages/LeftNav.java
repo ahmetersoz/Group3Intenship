@@ -11,60 +11,87 @@ public class LeftNav extends Parent {
     }
 
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
-    private WebElement SetupOne;
+    public WebElement SetupOne;
 
     @FindBy(xpath = "(//span[text()='Countries'])[1]")
-    private WebElement Countries;
+    public WebElement Countries;
 
     @FindBy(xpath = "//span[text()='Parameters']")
-    private WebElement Parameters;
+    public WebElement Parameters;
 
     @FindBy(xpath = "//span[text()='Citizenships']")
-    private WebElement Citizenships;
+    public WebElement Citizenships;
 
     @FindBy(xpath = "//span[text()='Nationalities']")
-    private WebElement nationalities;
+    public WebElement nationalities;
 
     @FindBy(xpath = "//span[text()='Fees']")
-    private WebElement Fees;
+    public WebElement Fees;
 
     @FindBy(xpath = "(//span[text()='Entrance Exams'])[1]")
-    private WebElement EntranceExams1;
+    public WebElement EntranceExams1;
 
     @FindBy(xpath = "(//span[text()='Entrance Exams'])[2]")
-    private WebElement EntranceExams2;
+    public WebElement EntranceExams2;
 
     @FindBy(xpath = "(//span[text()='Setup'])[2]")
-    private WebElement SetupTwo;
+    public WebElement SetupTwo;
 //-------------------------------------------------------------//
     @FindBy(xpath = "//span[text()='Human Resources']")
-    private WebElement HumanResources;
+    public WebElement HumanResources;
 
     @FindBy(xpath = "(//span[text()='Setup'])[3]")
-    private WebElement setupClick;
+    public WebElement setupClick;
 
 
 //-----------------------------------------------------------//
     @FindBy(xpath = "//span[text()='Employees']")
-    private WebElement Employees;
+    public WebElement Employees;
 
+    @FindBy(xpath = "//span[text()='School Setup']")
+    public WebElement SchoolSetup;
+
+    @FindBy(xpath = "//span[text()='Departments']")
+    public WebElement SchoolDepartments;
 
     @FindBy(xpath = "(//span[text()='Position Categories'])[1]")
-    private WebElement positionCategories;
+    public WebElement positionCategories;
 
     @FindBy(xpath = "(//span[text()='Attestations'])[1]")
-    private WebElement attestations;
+    public WebElement attestations;
 
     @FindBy(xpath = "(//span[text()='Document Types'])[1]")
-    private WebElement documentTypes;
+    public WebElement documentTypes;
 
     @FindBy(xpath = "//span[text()='Fields']")
-    private WebElement fields;
+    public WebElement fields;
 
     @FindBy(xpath = "(//span[text()='Positions'])[1]")
-    private WebElement positions;
+    public WebElement positions;
 
+    @FindBy(xpath = "//span[text()='Education']")
+    public WebElement education;
 
+    @FindBy(xpath = "(//span[text()='Setup'])[5]")
+    public WebElement setup4;
+
+    @FindBy(xpath = "(//span[text()='Subject Categories'])[1]")
+    private WebElement subjectCategories;
+
+    @FindBy(xpath = "//span[text()='Locations']")
+    public WebElement schoolLocations;
+
+    @FindBy(xpath = "//span[text()='Departments']")
+    public WebElement departments;
+
+    @FindBy(xpath = "(//span[text()='Bank Accounts'])[1]")
+    public WebElement bankAccounts;
+
+    @FindBy(xpath = "(//span[text()='Grade Levels'])[1]")
+    public WebElement gradeLevels;
+
+    @FindBy(xpath = "(//span[text()='Discounts'])[1]")
+    public WebElement discounts;
 
 
 
@@ -87,15 +114,22 @@ public class LeftNav extends Parent {
             case "SetupTwo" :myElement=SetupTwo; break;
             case "HumanResources" :myElement=HumanResources; break;
             case "EmployeeLink" :myElement=Employees; break;
-
-
+            case "SchoolSetup" :myElement=SchoolSetup; break;
+            case "SchoolDepartments" :myElement=SchoolDepartments; break;
             case "setupClick":myElement=setupClick;break;
             case "positionCategories":myElement=positionCategories;break;
             case "attestations":myElement=attestations;break;
             case "documentTypes":myElement=documentTypes;break;
             case "fields":myElement=fields;break;
             case "positions":myElement=positions;break;
-
+            case "education":myElement=education;break;
+            case "setup4":myElement=setup4;break;
+            case "subjectCategories":myElement=subjectCategories;break;
+            case "schoolLocations":myElement=schoolLocations;break;
+            case "departments":myElement=departments;break;
+            case "bankAccounts":myElement=bankAccounts;break;
+            case "gradeLevels":myElement=gradeLevels;break;
+            case "discounts":myElement=discounts;break;
 
 
 

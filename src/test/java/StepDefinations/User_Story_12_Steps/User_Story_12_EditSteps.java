@@ -1,22 +1,23 @@
-package Story1;
+package StepDefinations.User_Story_12_Steps;
 
 import Pages.DialogContent;
 import Pages.FormContent;
 import Pages.Parent;
 import io.cucumber.java.en.When;
 
-public class User_Story_1_EditSteps {
+public class User_Story_12_EditSteps {
     DialogContent dc=new DialogContent();
-    FormContent fm=new FormContent();
     Parent parent=new Parent();
-    @When("Edit to position category")
-    public void editToPositionCategory() {
+    FormContent fm=new FormContent();
 
-        dc.findAndSend("NAMEINPUT","Ahmet22");
+    @When("Edit to Nationalities")
+    public void editToNationalities() {
+        dc.verifyText("nameVerify","Name");
+        dc.findAndSend("NAMEINPUT","NİKARAGUA");
         dc.findAndClick("SEARCHBUTTON");
         parent.waitUntilLoading();
         dc.findAndClick("EDİTBUTTON");
-        fm.findAndSend("nameInput","Tunaş");
+        fm.findAndSend("nameInput","GUATEMALA");
         dc.findAndClick("saveButton");
 
     }

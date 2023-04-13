@@ -1,4 +1,4 @@
-package Story1;
+package StepDefinations.Story1;
 
 import Pages.DialogContent;
 import Pages.FormContent;
@@ -21,7 +21,7 @@ public class User_Story_1_AddSteps {
     @When("Add to position category")
     public void addToPositionCategory() {
         dc.findAndClick("createButton");
-        form.findAndSend("nameInput","Ahmet22");
+        form.findAndSend("nameInput","Ahmet2289");
         dc.findAndClick("saveButton");
 
     }
