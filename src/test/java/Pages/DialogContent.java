@@ -57,15 +57,16 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath="//mat-slide-toggle[@formcontrolname='active']")
     public WebElement toggleBar;
-    @FindBy(xpath = "(//ms-edit-button[@table='true'])//button[1]")
+    @FindBy(xpath = "(//ms-edit-button[@class='ng-star-inserted']//button)[1]")
     public WebElement editButton;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[33]//fa-icon")
     public WebElement DELETEBUTTONROW9;
 
-    @FindBy(xpath = "(//ms-delete-button[@table='true'])//button[1]")
+    @FindBy(xpath = "(//ms-delete-button[@class='ng-star-inserted']//button)[1]")
     public WebElement deleteButton;
-
+    //ms-edit-button[@class='ng-star-inserted']//button)[1]
+    //ms-delete-button[@table='true'])//button[1]
     @FindBy(xpath = "//span[contains(text(),' Delete ')]")
     public WebElement deleteButton2;
 

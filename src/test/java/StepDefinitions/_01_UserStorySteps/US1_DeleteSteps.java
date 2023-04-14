@@ -11,11 +11,10 @@ public class US1_DeleteSteps {
     Parent parent=new Parent();
     @When("Delete to position category")
     public void deleteToPositionCategory() {
-//        dc.findAndSend("NAMEINPUT","ahmet8181");
-//        dc.findAndClick("searchbutton");
-//        parent.waitUntilLoading();
-//        dc.findAndClick("DELETEBUTTON");
-//        dc.findAndClick("DELETEBUTTON2");
-
+       dc.sendKeysFunction(dc.searchNameInput,"Utniy");
+      dc.clickFunction(dc.searchbutton);
+       parent.waitUntilLoading();
+     dc.clickFunction(dc.deleteButton);
+       dc.clickFunction(dc.deleteButton2);
     }
 }

@@ -3,6 +3,7 @@ package StepDefinitions._01_UserStorySteps;
 import Pages.DialogContent;
 import Pages.FormContent;
 import Pages.LeftNav;
+import Pages.StaticString;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
@@ -12,17 +13,19 @@ public class US1_AddSteps {
     FormContent form=new FormContent();
     @Given("Clicking selected options in the campus menu")
     public void clickingSelectedOptionsInTheCampusMenu() {
-//        ln.findAndClick("HumanResources");
-//        ln.findAndClick("setupClick");
-//        ln.findAndClick("positionCategories");
-
+        dc.clickFunction(ln.HumanResources);
+        dc.clickFunction(ln.setupClick);
+        dc.clickFunction(ln.Positions);
     }
 
     @When("Add to position category")
     public void addToPositionCategory() {
-//        dc.findAndClick("createButton");
-//        form.findAndSend("nameInput","ahmet8181");
-//        dc.findAndClick("saveButton");
+        String name = DialogContent.generateRandomString(5);
+        StaticString.randomString =name;
+       dc.clickFunction(dc.createButton);
+        dc.sendKeysFunction(dc.nameInput,name);
+        dc.sendKeysFunction(dc.shortNameInput,"Ahmet951");
+       dc.clickFunction(dc.saveButton);
     }
 
     @When("Confirmation of successfully")

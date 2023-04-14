@@ -9,6 +9,16 @@ public class US4_DeleteSteps {
     Parent parent=new Parent();
     @When("Delete to Fields")
     public void deleteToFields() {
+
+        ;
+
+
+        dc.sendKeysFunction(dc.searchNameInput,"AL2vU");
+        dc.clickFunction(dc.searchbutton);
+        dc.waitUntilVisible(dc.deleteButton);
+        dc.clickFunction(dc.deleteButton);
+
+        dc.clickFunction(dc.deleteButton2);
 //        dc.findAndSend("NAMEINPUT","Ramazan");
 //        dc.findAndClick("searchbutton");
 //        parent.waitUntilLoading();
