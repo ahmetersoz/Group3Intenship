@@ -17,16 +17,18 @@ public class Login {
 
     @When("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton() {
-        dc.findAndSend("username","turkeyts");
-        dc.findAndSend("password","TechnoStudy123");
-        dc.findAndClick("loginButton");
+      dc.sendKeysFunction(dc.username,"turkeyts");
+      dc.sendKeysFunction(dc.password,"TechnoStudy123");
+      dc.clickFunction(dc.loginButton);
 
     }
 
 
 
     @Then("User should login successfully")
-    public void userShouldLoginSuccessfully() {dc.verifyText("Dashboard","Dashboard");
+    public void userShouldLoginSuccessfully()
+    {
+        dc.verifyContainsText(dc.Dashboard,"Dashboard");
     }
     }
 

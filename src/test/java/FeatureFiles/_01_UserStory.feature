@@ -21,3 +21,4 @@ Feature: Add - Edit - Delete Position Categories Under Human Resources Setup
        Given Clicking selected options in the campus menu
        When  Delete to position category
        Then  Confirmation of successfully
+
