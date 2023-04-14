@@ -1,6 +1,7 @@
 package Pages;
 
 import Utilities.GWD;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,23 +35,39 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
    public WebElement succesfully;
 
-    @FindBy(xpath = "(//ms-text-field[contains(@placeholder,'NAME')])[1]//input")
-    public WebElement NAMEINPUT;
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='name']/input")
+    public WebElement nameInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='iban']/input")
+    public WebElement iban;
+
+    @FindBy(xpath = "//mat-select[@formcontrolname='currency']")
+    public WebElement currency;
+
+    @FindBy(xpath = "(//span[@class='mat-option-text'])[4]")
+    public WebElement currencyTRY;
+    @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.NAME']/input")
+    public WebElement searchNameInput;
+
+    @FindBy(xpath = "(//td[@role='cell'])[2]")
+    public WebElement searchedCell;
 
     @FindBy(xpath = "//span[contains(text(),'Search')]")
     public WebElement searchbutton;
 
-    @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[12]//fa-icon")
-    public WebElement EDİTBUTTON;
+    @FindBy(xpath="//mat-slide-toggle[@formcontrolname='active']")
+    public WebElement toggleBar;
+    @FindBy(xpath = "(//ms-edit-button[@table='true'])//button[1]")
+    public WebElement editButton;
 
     @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[33]//fa-icon")
     public WebElement DELETEBUTTONROW9;
 
-    @FindBy(xpath = "(//span[contains(@class,'mat-button-wrapper')])[13]//fa-icon")
-    public WebElement DELETEBUTTON;
+    @FindBy(xpath = "(//ms-delete-button[@table='true'])//button[1]")
+    public WebElement deleteButton;
 
     @FindBy(xpath = "//span[contains(text(),' Delete ')]")
-    public WebElement DELETEBUTTON2;
+    public WebElement deleteButton2;
 
     @FindBy(xpath = "//span[text()='Campus Project']")
     private WebElement schoolButton;
@@ -67,60 +84,17 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//div[text()=' Name ']")
     public WebElement nameVerify;
 
-
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
+    public WebElement shortNameInput;
 
     WebElement myElement;
 
-    public void findAndSend(String strElement,String value) {
-        switch (strElement) {
-            case "username":myElement=username;break;
-            case "password":myElement=password;break;
-            case "NAMEINPUT":myElement=NAMEINPUT;break;
-            case "descriptionInput":myElement=descriptionInput;break;
 
+    public static String generateRandomString(int length) {
 
-
-
-
-        }
-        sendKeysFunction(myElement,value);
-    }
-
-    public void findAndClick(String strElement){
-        switch (strElement){
-            case "loginButton":myElement=loginButton;break;
-            case "acceptCookies":myElement=AcceptCookies;break;
-            case "createButton":myElement=createButton;break;
-            case "saveButton":myElement=saveButton;break;
-            case "SEARCHBUTTON":myElement=searchbutton;break;
-            case "EDİTBUTTON":myElement=EDİTBUTTON;break;
-            case "DELETEBUTTON":myElement=DELETEBUTTON;break;
-            case "DELETEBUTTON2":myElement=DELETEBUTTON2;break;
-            case "schoolButton":myElement=schoolButton;break;
-            case "haloImperial":myElement=haloImperial;break;
-            case "gradeEditButton":myElement=gradeEditButton;break;
-            case "DELETEBUTTONROW9":myElement=DELETEBUTTONROW9;break;
-
-            
-
-
-
-        }
-        clickFunction(myElement);
-    }
-
-
-
-    public void verifyText(String strElement,String text){
-        switch (strElement){
-            case "Dashboard":myElement=Dashboard;break;
-            case "succesfully":myElement=succesfully;break;
-            case "nameVerify":myElement=nameVerify;break;
-
-
-
-        }
-        verifyContainsText(myElement,text);
+        String randomString = RandomStringUtils.randomAlphanumeric(length);
+        StaticString.randomString = randomString;
+        return randomString;
     }
 
 }

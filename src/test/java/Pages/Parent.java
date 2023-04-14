@@ -1,16 +1,20 @@
 package Pages;
 
 import Utilities.GWD;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 
 public class Parent {
+    WebDriverWait wait=new WebDriverWait(GWD.getDriver(),
+            Duration.ofSeconds(5));
 
     public void sendKeysFunction(WebElement element,String value){
        waitUntilVisible(element);
@@ -44,8 +48,9 @@ public class Parent {
     }
 
     public void verifyContainsText(WebElement element,String text){
-        waitUntilVisible(element);
-        Assert.assertTrue(element.getText().toLowerCase().contains(text.toLowerCase()));
+        wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+        Assert.assertTrue(element.getText().toLowerCase().contains(text.toLowerCase()),"Not Found");
+        new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).perform();
 
     }
 
