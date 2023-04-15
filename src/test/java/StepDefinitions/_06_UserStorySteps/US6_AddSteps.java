@@ -12,17 +12,20 @@ public class US6_AddSteps {
     FormContent fm=new FormContent();
     @Given("Clicking on the Setup, Education, Subject Categories options from the menu categories")
     public void clickingOnTheSetupEducationSubjectCategoriesOptionsFromTheMenuCategories() {
-//        ln.findAndClick("education");
-//        ln.findAndClick("setup4");
-//        ln.findAndClick("subjectCategories");
+//        l;
+        dc.clickFunction(ln.education);
+        dc.clickFunction(ln.setup4);
+        dc.clickFunction(ln.subjectCategories);
+
     }
 
     @When("Add to Subject Categories")
     public void addToSubjectCategories() {
-//        dc.findAndClick("createButton");
-//        fm.findAndSend("nameInput","Tuniskom");
-//        fm.findAndSend("code","0099880");
-//        dc.findAndClick("saveButton");
+//
+        dc.clickFunction(dc.createButton);
+        dc.sendKeysFunction(dc.nameInput,"Enes0042");
+        dc.sendKeysFunction(fm.code1,"55");
+        dc.clickFunction(dc.saveButton);
 
     }
 }

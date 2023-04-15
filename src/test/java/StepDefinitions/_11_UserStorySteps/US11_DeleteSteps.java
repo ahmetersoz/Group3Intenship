@@ -10,12 +10,12 @@ public class US11_DeleteSteps {
 
     @When("Delete to Discounts")
     public void deleteToDiscounts() {
-//        parent.waitEditButtonVerify();
-//        dc.findAndSend("descriptionInput","Tuna");
-//        dc.findAndClick("searchbutton");
-//        parent.waitUntilLoading();
-//        dc.findAndClick("DELETEBUTTON");
-//        dc.findAndClick("DELETEBUTTON2");
+//
+        dc.sendKeysFunction(dc.descriptionInput,"22");
+        dc.clickFunction(dc.searchbutton);
+        parent.waitUntilLoading();
+        dc.clickFunction(dc.deleteButton);
+        dc.clickFunction(dc.deleteButton2);
 
     }
 }

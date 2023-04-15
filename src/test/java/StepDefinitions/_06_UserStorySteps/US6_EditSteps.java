@@ -17,6 +17,12 @@ public class US6_EditSteps {
 //        fm.findAndSend("nameInput","enesff");
 //        fm.findAndSend("code","009988");
 //        dc.findAndClick("saveButton");
+        dc.sendKeysFunction(dc.searchNameInput,"Enes0042");
+        dc.clickFunction(dc.searchbutton);
+        dc.clickFunction(dc.editButton);
+        dc.sendKeysFunction(dc.nameInput,"Enes004207");
+        dc.sendKeysFunction(fm.code1,"9087" );
+        dc.clickFunction(dc.saveButton);
 
 
     }

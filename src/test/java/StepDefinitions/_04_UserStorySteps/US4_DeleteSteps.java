@@ -5,25 +5,20 @@ import Pages.Parent;
 import io.cucumber.java.en.When;
 
 public class US4_DeleteSteps {
-    DialogContent dc=new DialogContent();
-    Parent parent=new Parent();
+    DialogContent dc = new DialogContent();
+    Parent parent = new Parent();
+
     @When("Delete to Fields")
     public void deleteToFields() {
 
         ;
 
 
-        dc.sendKeysFunction(dc.searchNameInput,"AL2vU");
+        dc.sendKeysFunction(dc.searchNameInput, "AL2vU");
         dc.clickFunction(dc.searchbutton);
         dc.waitUntilVisible(dc.deleteButton);
         dc.clickFunction(dc.deleteButton);
 
         dc.clickFunction(dc.deleteButton2);
-//        dc.findAndSend("NAMEINPUT","Ramazan");
-//        dc.findAndClick("searchbutton");
-//        parent.waitUntilLoading();
-//        dc.findAndClick("DELETEBUTTON");
-//        dc.findAndClick("DELETEBUTTON2");
-
     }
 }

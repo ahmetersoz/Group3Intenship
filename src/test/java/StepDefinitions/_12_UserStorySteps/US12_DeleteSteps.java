@@ -10,12 +10,12 @@ public class US12_DeleteSteps {
 
     @When("Delete to Nationalities")
     public void deleteToNationalities() {
-//        dc.verifyText("nameVerify","Name");
-//        dc.findAndSend("NAMEINPUT","brazil");
-//        dc.findAndClick("searcbutton");
-//        parent.waitUntilLoading();
-//        dc.findAndClick("DELETEBUTTON");
-//        dc.findAndClick("DELETEBUTTON2");
+
+        dc.sendKeysFunction(dc.searchNameInput,"Cat");
+        dc.clickFunction(dc.searchbutton);
+        parent.waitUntilLoading();
+        dc.clickFunction(dc.deleteButton);
+        dc.clickFunction(dc.deleteButton2);
 
 
     }

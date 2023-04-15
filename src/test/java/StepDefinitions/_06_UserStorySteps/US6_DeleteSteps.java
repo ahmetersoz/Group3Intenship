@@ -14,6 +14,13 @@ public class US6_DeleteSteps {
 //        parent.waitUntilLoading();
 //        dc.findAndClick("DELETEBUTTON");
 //        dc.findAndClick("DELETEBUTTON2");
+        dc.sendKeysFunction(dc.searchNameInput,"Enes004207");
+        dc.clickFunction(dc.searchbutton);
+        parent.waitUntilLoading();
+        dc.clickFunction(dc.deleteButton);
+        dc.clickFunction(dc.deleteButton2);
+
+
 
 
     }

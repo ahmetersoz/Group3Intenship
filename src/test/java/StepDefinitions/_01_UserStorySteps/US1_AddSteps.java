@@ -31,8 +31,9 @@ public class US1_AddSteps {
     @When("Confirmation of successfully")
     public void confirmationOfSuccessfully() {
 
-        //dc.verifyText("succesfully","successfully");
+        dc.verifyContainsText(dc.succesfully,"successfully");
+    }
 
 
     }
-}
+
