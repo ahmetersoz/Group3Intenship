@@ -14,11 +14,8 @@ public class US4_DeleteSteps {
         ;
 
 
-        dc.sendKeysFunction(dc.searchNameInput, "AL2vU");
-        dc.clickFunction(dc.searchbutton);
         dc.waitUntilVisible(dc.deleteButton);
         dc.clickFunction(dc.deleteButton);
-
         dc.clickFunction(dc.deleteButton2);
     }
 }

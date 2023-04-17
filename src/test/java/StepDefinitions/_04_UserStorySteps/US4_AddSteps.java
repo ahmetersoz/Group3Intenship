@@ -24,7 +24,7 @@ public class US4_AddSteps {
         String name = DialogContent.generateRandomString(5);
         StaticString.randomString =name;
        dc.sendKeysFunction(dc.nameInput,name);
-       dc.sendKeysFunction(fm.code1,"999900");
+       dc.sendKeysFunction(fm.code1,name);
         dc.clickFunction(fm.textSelect);
         dc.clickFunction(fm.logical);
         dc.clickFunction(dc.saveButton);

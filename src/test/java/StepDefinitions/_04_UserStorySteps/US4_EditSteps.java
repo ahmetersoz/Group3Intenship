@@ -20,13 +20,15 @@ public class US4_EditSteps {
 
 
 
-        dc.sendKeysFunction(dc.searchNameInput,"9.0");
+        dc.sendKeysFunction(dc.searchNameInput, StaticString.randomString);
         dc.clickFunction(dc.searchbutton);
+        dc.verifyContainsText(dc.searchedCell,StaticString.randomString);
         dc.waitUntilVisible(dc.editButton);
-        dc.clickFunction(dc.editButton);
-        dc.sendKeysFunction(dc.nameInput,"Tunnabab");
 
-        dc.sendKeysFunction(fm.code1,"1111");
+        dc.clickFunction(dc.editButton);
+        dc.sendKeysFunction(dc.nameInput,RandomStringUtils.randomAlphanumeric(3));
+
+        //dc.sendKeysFunction(fm.code1,"1111");
         dc.clickFunction(fm.textSelect);
         dc.clickFunction(fm.logical);
         dc.clickFunction(dc.saveButton);
