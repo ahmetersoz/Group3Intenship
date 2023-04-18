@@ -105,11 +105,7 @@ public class FormContent extends Parent {
     @FindBy(xpath = "(//mat-select[@role='combobox'])[2]/div[1]")
     public WebElement nextGrade;
 
-    @FindBy(xpath = "//span[text()=' Gullu Julian Bednar ']")
-    public WebElement gulluselect;
 
-    @FindBy(xpath = "//span[text()=' capacitor ']")
-    public WebElement leonard;
 
     @FindBy(xpath = "//ms-text-field[@formcontrolname='description']//input")
     public WebElement getDescription;
@@ -179,8 +175,6 @@ public class FormContent extends Parent {
             case "EURO":myElement=EURO;break;
             case "TRY":myElement=TRY;break;
             case "nextGrade":myElement=nextGrade;break;
-            case "gulluselect":myElement=gulluselect;break;
-            case "leonard":myElement=leonard;break;
 
 
 
