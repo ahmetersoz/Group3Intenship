@@ -120,15 +120,17 @@ public class FormContent extends Parent {
     @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
     public WebElement priority;
 
-
-
-
-
-
+    @FindBy(xpath = "//input[@data-placeholder='Code']")
+    public WebElement code2;
 
     @FindBy(xpath = "((//span[@class='mat-ripple mat-button-ripple'])[3]")
     public WebElement savebutton2;
 
+    @FindBy(xpath = "//button[@class='mat-focus-indicator mat-tooltip-trigger mat-accent mat-button mat-button-base mat-raised-button ng-star-inserted']")
+    public WebElement saveButton1;
+
+    @FindBy(xpath = "//*[@class='ng-tns-c12-66 ng-pristine ng-invalid ng-touched']")
+    public WebElement codebttn;
 
 
 
