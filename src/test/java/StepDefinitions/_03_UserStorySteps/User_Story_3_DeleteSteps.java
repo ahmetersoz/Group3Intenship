@@ -1,18 +1,20 @@
-package StepDefinitions.User_Story_10_Steps;
+package StepDefinitions._03_UserStorySteps;
 
 import Pages.DialogContent;
 import Pages.Parent;
 import io.cucumber.java.en.When;
 
-public class User_Story_10_DeleteSteps {
+public class User_Story_3_DeleteSteps {
     DialogContent dc=new DialogContent();
     Parent parent=new Parent();
+    @When("Delete to Document Types")
+    public void deleteToDocumentTypes() {
 
-    @When("Delete to Grade Levels")
-    public void deleteToGradeLevels() {
-        parent.waitEditButtonVerify();
+
+        dc.waitUntilVisible(dc.deleteButton);
         dc.clickFunction(dc.deleteButton);
         dc.clickFunction(dc.deleteButton2);
+
 
     }
 }
