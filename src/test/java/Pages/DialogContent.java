@@ -88,6 +88,19 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
     public WebElement shortNameInput;
 
+
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-pen-to-square']")
+    public WebElement deleteButton1;
+
+    @FindBy(xpath = "//td[@role='cell']")
+    public WebElement cellList;
+
+    @FindBy(css = "mat-select[role='combobox'] div")
+    public WebElement select1;
+    @FindBy(xpath = "(//span[@class='mat-option-text'])[7]")
+    public WebElement select2;
+
+
     WebElement myElement;
 
 
