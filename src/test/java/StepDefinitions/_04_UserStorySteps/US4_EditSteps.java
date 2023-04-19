@@ -28,7 +28,7 @@ public class US4_EditSteps {
         dc.clickFunction(dc.editButton);
         dc.sendKeysFunction(dc.nameInput,RandomStringUtils.randomAlphanumeric(3));
 
-        //dc.sendKeysFunction(fm.code1,"1111");
+
         dc.clickFunction(fm.textSelect);
         dc.clickFunction(fm.logical);
         dc.clickFunction(dc.saveButton);

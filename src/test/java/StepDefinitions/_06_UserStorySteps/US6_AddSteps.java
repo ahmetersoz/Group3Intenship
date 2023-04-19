@@ -23,7 +23,7 @@ public class US6_AddSteps {
     public void addToSubjectCategories() {
 //
         dc.clickFunction(dc.createButton);
-        dc.sendKeysFunction(dc.nameInput,"Enes00432");
+        dc.sendKeysFunction(dc.nameInput,"Enes004329");
         dc.sendKeysFunction(fm.code1,"55");
         dc.clickFunction(dc.saveButton);
 

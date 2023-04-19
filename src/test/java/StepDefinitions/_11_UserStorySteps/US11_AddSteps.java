@@ -15,9 +15,7 @@ public class US11_AddSteps {
     LeftNav ln=new LeftNav();
     @Given("Clicking on the Setup, Parameters, Discounts options from the menu categories")
     public void clickingOnTheSetupParametersDiscountsOptionsFromTheMenuCategories(){
-//        ln.findAndClick("SetupOne");
-//        ln.findAndClick("Parameters");
-//        ln.findAndClick("discounts");
+
         dc.clickFunction(ln.SetupOne);
         dc.clickFunction(ln.Parameters);
         dc.clickFunction(ln.discounts);
@@ -25,9 +23,7 @@ public class US11_AddSteps {
 
     @When("Add to Discounts")
     public void addToDiscounts() throws AWTException {
-//
-//
-//        dc.findAndClick("saveButton");
+
         String name = DialogContent.generateRandomString(5);
         StaticString.randomString =name;
         String priority = RandomStringUtils.randomAlphanumeric(3);

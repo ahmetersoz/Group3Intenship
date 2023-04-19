@@ -14,9 +14,7 @@ public class US12_AddSteps {
     FormContent fm=new FormContent();
     @Given("Clicking on the Setup, Parameters, Nationalities options from the menu categories")
     public void clickingOnTheSetupParametersNationalitiesOptionsFromTheMenuCategories() {
-//        ln.findAndClick("SetupOne");
-//        ln.findAndClick("Parameters");
-//        ln.findAndClick("Nationality");
+
         dc.clickFunction(ln.SetupOne);
         dc.clickFunction(ln.Parameters);
         dc.clickFunction(ln.nationalities);
