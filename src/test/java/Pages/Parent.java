@@ -21,7 +21,6 @@ public class Parent {
         scrollToElement(element);
         element.clear();
         element.sendKeys(value);
-
     }
 
     public void clickFunction(WebElement element){

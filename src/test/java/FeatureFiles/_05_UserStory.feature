@@ -23,5 +23,3 @@ Feature: Add - Edit - Delete Positions Under Human Resources Setup
           And  Verify that the correct record found
           Then Click to delete icon and confirm the delete confirmation message
           And Successful message should be displayed
-
-
