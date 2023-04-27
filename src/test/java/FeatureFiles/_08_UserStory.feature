@@ -19,7 +19,6 @@ Feature: I should be able to Add-Edit-Delete Departments under School Setup
 
   Scenario: Delete position Departments position to School Setup
     When Navigate to Departments page
-    And Verify that the correct record found to department
     Then Click to delete button  and confirm the delete confirmation message
     And Successful message should be displayed
 

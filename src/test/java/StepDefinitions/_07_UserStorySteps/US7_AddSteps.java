@@ -19,15 +19,14 @@ public class US7_AddSteps {
 
     @Then("Add new location and click the toggle")
     public void addNewLocationAndToggle() {
-        String name = DialogContent.generateRandomString(5);
-        StaticString.randomString =name;
+        String name =  DialogContent.generateRandomString(5);
+        StaticString.randomString = name;
         String shortName = RandomStringUtils.randomAlphanumeric(3);
-        String capacityInput = RandomStringUtils.randomAlphanumeric(3);
 
         dc.clickFunction(dc.createButton);
         dc.sendKeysFunction(dc.nameInput,name);
         dc.sendKeysFunction(dc.shortNameInput,shortName);
-        dc.sendKeysFunction(dc.capacityInput,capacityInput);
+        dc.sendKeysFunction(dc.capacityInput,"250");
         dc.clickFunction(dc.toggleBar);
         dc.clickFunction(dc.saveButton);
     }

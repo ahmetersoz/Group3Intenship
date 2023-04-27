@@ -25,7 +25,7 @@ public class US8_AddSteps {
     public void addNewDepartmentAccountPage() {
 
 
-        String name = DialogContent.generateRandomString(5);
+        String name =  "0" + DialogContent.generateRandomString(5);
         StaticString.randomString =name;
         String shortName = RandomStringUtils.randomAlphanumeric(3);
 

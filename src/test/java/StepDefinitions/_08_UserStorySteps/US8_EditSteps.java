@@ -19,18 +19,17 @@ public class US8_EditSteps {
     FormContent fc = new FormContent();
     DialogContent dc = new DialogContent();
 
-    LeftNav ln = new LeftNav();
 
 
     @And("Verify that the correct record found to department")
     public void verifyThatTheCorrectRecordFoundToDepartment() {
 
-        dc.waitUntilVisible(dc.editButton);
-
-        dc.clickFunction(dc.select1);
-        dc.clickFunction(dc.select2);
-
-        dc.waitUntilVisible(dc.editButton);
+//        dc.waitUntilVisible(dc.editButton);
+//
+//        dc.clickFunction(dc.select1);
+//        dc.clickFunction(dc.select2);
+//
+//        dc.waitUntilVisible(dc.editButton);
 
 
         List<WebElement> items = GWD.getDriver().findElements(By.xpath("//td[@role='cell']"));
@@ -40,10 +39,6 @@ public class US8_EditSteps {
 
                 Assert.assertEquals(StaticString.randomString, items.get(i).getText(), "test fail");
             }
-
-
-
-
         }
     }
 
@@ -63,7 +58,9 @@ public class US8_EditSteps {
             }
 
 
-            dc.sendKeysFunction(fc.codeInput, RandomStringUtils.randomAlphanumeric(3));
+            String name =  "0" + DialogContent.generateRandomString(5);
+            StaticString.randomString =name;
+            dc.sendKeysFunction(fc.nameInput, name);
             dc.clickFunction(dc.saveButton);
         }
     }

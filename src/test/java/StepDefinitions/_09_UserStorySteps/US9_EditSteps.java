@@ -15,7 +15,8 @@ public class US9_EditSteps {
 
     @Then("Click to edit button and change the iban then click to save")
     public void clickToEditButtonAndChangeTheIbanThenClickToSave() {
-
+        dc.waitUntilVisible(dc.editButton);
+        dc.clickFunction(dc.editButton);
         dc.sendKeysFunction(dc.iban,RandomStringUtils.randomNumeric(11));
         dc.clickFunction(dc.saveButton);
     }
