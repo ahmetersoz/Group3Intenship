@@ -12,16 +12,14 @@ Feature: Add - Edit - Delete Locations Under  School Setup
 
   Scenario:  Search and Edit the Locations Under School Setup
     When Navigate to Locations Page
-    Then Search the location name added previously
-    And  Verify that the correct record found
-    Then Click to edit button and change the name then click to save
+    And  Verify that the correct record found to location
+    Then Click to edit button and change the Name then click to save
     And Successful message should be displayed
 
   Scenario:  Search and Delete the Locations Under School Setup
     When Navigate to Locations Page
-    Then Search the location name added previously
     And  Verify that the correct record found
-    Then Click to delete icon and confirm the delete confirmation message
+    Then Click to delete and confirm the delete confirmation message
     And Successful message should be displayed
 
 

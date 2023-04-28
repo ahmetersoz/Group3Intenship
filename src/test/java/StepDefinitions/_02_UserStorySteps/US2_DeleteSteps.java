@@ -10,9 +10,10 @@ public class US2_DeleteSteps {
 
     @Then("Click to delete button and confirm the delete confirmation message")
     public void clickToDeleteButtonAndConfirmTheDeleteConfirmationMessage() {
+        dc.waitUntilVisible(dc.deleteButton);
+        dc.waitUntilClickable(dc.deleteButton);
 
-        dc.waitUntilVisible(dc.deleteButton1);
-        dc.clickFunction(dc.deleteButton1);
+        dc.clickFunction(dc.deleteButton);
         dc.clickFunction(dc.deleteButton2);
     }
 }
